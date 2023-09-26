@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #20232a; /* Fundo escuro */
+}
+
+.container {
+    width: 280px;
+    background: #282c34; /* Base em tom de cinza escuro */
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow: hidden;
+}
+
+#visor {
+    width: 100%;
+    height: 70px;
+    font-size: 2.2em;
+    background-color: transparent;
+    color: #61dafb; /* Azul ciano claro para contraste */
+    border: none;
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #61dafb; /* Borda na cor de destaque */
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.6em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #3a3f4b; /* Cinza levemente azulado */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    color: #e1e1e1; /* Cinza claro para os números e símbolos */
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.operacao {
+    font-weight: bold;
+    color: #61dafb; /* Cor de destaque para as operações */
+}
